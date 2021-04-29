@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>To Do List</title>
+   
+</head>
+   
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="div-todo-heading">
+                    
+                        <strong>Todo List</strong>
+                    
+                       
+                </div>
+            </div>
+        </div>
+    </header>
+  
+    <div class="container">
+        <h2>Add Task</h2>   
+        <label id="lblsuccess" class="text-success" >
+        </label>
+          
+        <form id="addForm">
+            <div class="div-row">
+                <div class="div-col">
+  
+                    <input type="text"  class="form-control" id="item" placeholder="Task Title">
+                    <button type="submit" class="btn-submit" id="submit" value="Submit">Add</button>
+                </div>
+                
+                
+            </div>
+        </form>
+   
+        <h3>Tasks</h3>
+   
+        <form id="addForm">
+            <ul class="list-group" id="items"></ul>
+        </form>
+    </div>
+</body>
+<script src="main.js"></script>
+   
+</html>
