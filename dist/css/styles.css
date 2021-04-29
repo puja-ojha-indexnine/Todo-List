@@ -10,19 +10,24 @@ strong {
     font-size: 30pt;
 }
 
-.container {
-    background-color: thistle;
+body {
+    background-color: darkgrey;
 }
 
 .form-control {
 
     height: 18pt;
     width: 70%;
+    
 }
-
+.list-group {
+    background-color: lightgrey;
+}
 .btn-submit {
     height: 23pt;
     width: 50pt;
     font-size: 12pt;
 }
+
+
 
