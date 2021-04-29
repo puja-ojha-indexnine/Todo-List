@@ -21,7 +21,7 @@ function addItem(e) {
         submit.value = "Submit";
         document.getElementById("item").value = "";
   
-        document.getElementById("lblsuccess").innerHTML = "Text edited successfully";
+        document.getElementById("lblsuccess").innerHTML = "Task edited successfully";
   
         document.getElementById("lblsuccess").style.display = "block";
   
@@ -68,26 +68,19 @@ function removeItem(e) {
         if (confirm("Are you Sure?")) {
             let li = e.target.parentNode;
             items.removeChild(li);
-            document.getElementById("lblsuccess").innerHTML
-                = "Text deleted successfully";
+            document.getElementById("lblsuccess").innerHTML = "Task deleted successfully";
   
-            document.getElementById("lblsuccess")
-                        .style.display = "block";
+            document.getElementById("lblsuccess").style.display = "block";
   
             setTimeout(function() {
-                document.getElementById("lblsuccess")
-                        .style.display = "none";
+                document.getElementById("lblsuccess").style.display = "none";
             }, 3000);
         }
     }
     if (e.target.classList.contains("edit")) {
-        document.getElementById("item").value =
-            e.target.parentNode.childNodes[0].data;
+        document.getElementById("item").value = e.target.parentNode.childNodes[0].data;
         submit.value = "EDIT";
         editItem = e;
     }
 }
   
-/*function toggleButton(ref, btnID) {
-    document.getElementById(btnID).disabled = false;
-}*/
